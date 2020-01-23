@@ -156,6 +156,8 @@ dmstats \(em device-mapper statistics management
 .  RB [ --units
 .  IR units ]
 .  OPT_OBJECTS
+.  RB [ --reportformat
+.  IR basic | json  ]
 .  RB \%[ --nosuffix ]
 .  RB [ --notimesuffix ]
 .  RB \%[ -v | --verbose]
@@ -192,6 +194,8 @@ dmstats \(em device-mapper statistics management
 .  OPT_PROGRAMS
 .  OPT_REGIONS
 .  OPT_OBJECTS
+.  RB [ --reportformat
+.  IR basic | json ]
 .  RB [ -O | --sort
 .  IR sort_fields ]
 .  RB [ -S | --select
@@ -504,6 +508,13 @@ expressed as a hyphen separated range, for example: '1-10'.
 .br
 If displaying the histogram report show relative (percentage) values
 instead of absolute counts.
+.
+.HP
+.BR \-\-reportformat
+.RB [ basic | json ]
+.br
+Specify the output format for list and report subcommands. \fBjson\fP produces
+report output in JSON format.
 .
 .HP
 .BR -S | --select
